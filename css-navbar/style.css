@@ -1,0 +1,54 @@
+:root{
+    /* Color de fondo*/
+    --grisclarito : RGB(17, 17, 16); 
+
+    /* Font */
+    --alternative-font: "Raleway", sans-serif;
+
+    /* Font Color */
+    --light-font-solid: #FFFFFF;
+}
+
+*{
+    margin: 0;  /* Espacio alrededor de los elementos. */
+    padding: 0;  /* Espacio alrededor del contenido de un elemento.  */
+    box-sizing: border-box; /* Como se comportan tanto los margenes como los rellenos que vamos a utilizar para calcular el ancho y alto de los elementos */
+    /* Si usamos content-box cualquier elemento se va a ver modificado */
+}
+
+header {
+    background-color: var(--grisclarito);
+    color: var(--light-font-solid);
+    font-size: var(--alternative-font);
+}
+
+/* Contenedor */
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo img{
+    margin-top: 0.5rem;
+    width: 100px; 
+    height: auto; 
+    border-radius: 0.5rem;
+  
+}
+
+.navbar_menu, .navbar__item{
+    display: flex;
+    text-decoration: none;
+    gap: 3rem;
+}
+
+
