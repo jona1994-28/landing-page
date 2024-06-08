@@ -1,0 +1,35 @@
+:root{
+    /* Font*/
+    --alternative-font: "Raleway", sans-serif;
+    
+    /* Background-Color Navbar*/
+    --negro: RGB(17, 17, 16); 
+    /* Font-Color Navbar */
+    --light-font-solid: #FFFFFF;
+    
+    /* Font-Color Hero */
+    --gris-clarito:  #95A5A6 ;
+    --azuloscuro: #34495E;
+
+}
+
+*{
+    margin: 0;  /* Espacio alrededor de los elementos. */
+    padding: 0;  /* Espacio alrededor del contenido de un elemento.  */
+    box-sizing: border-box; /* Como se comportan tanto los margenes como los rellenos que vamos a utilizar para calcular el ancho y alto de los elementos */
+    /* Si usamos content-box cualquier elemento se va a ver modificado */
+    
+}
+
+header {
+    background-color: var(--negro);
+    color: var(--light-font-solid);
+    font-family: var(--alternative-font);
+}
+
+/* Contenedor */
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
