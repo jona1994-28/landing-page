@@ -1,35 +1,50 @@
 /* Navbar */
 
-
-
-.navbar{
+.header{
+    height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0; /* Ajusta según sea necesario */
-    height: 140px; /* Altura  */
-    width: 100%; /* Ancho completo */
-    position: fixed; /* Fijo en la parte superior */
-    top: 0;
-    left: 0;
-    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
-    background-color: var(--negro);
-    color: var(--light-font-solid);
-    font-family: var(--alternative-font);
+    padding: 0px 50px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
-.navbar__logo img{
-    margin-top: 0.5rem;
-    width: 100px; 
-    height: auto; 
-    border-radius: 0.5rem;
+.header img{
+    width: 70px;
+    height: 70px;
 }
 
-.navbar_menu, .navbar__item{
+.header__navbar ul{
+    list-style-type: none;
     display: flex;
-    text-decoration: none;
-    gap: 3rem;
+    gap: 100px;
 }
 
+.header__navbar ul li{
+    color: var(--gris-clarito);
+}
+
+.header__navbar{
+    display: flex;
+}
+
+.header__navbar i{
+    font-size: 36px;
+    display: none;
+}
+
+#header__navbar--toggleMenu{
+    display: none;
+}
+
+.header__navbarMenu{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
 
 

@@ -1,4 +1,4 @@
-.contact-container {
+.contact__section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,26 +6,27 @@
     padding: 20px;
 }
 
-.contact-content, .map {
+.contact__section--content, .map {
     flex: 1;
     margin: 10px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 2rem;
     padding: 20px;
 }
 
-.contact-content {
+.contact__section--content {
     max-width: 400px;
+    height: 200px;
     text-align: center;
 }
 
-.contact-content h2 {
+.contact__section--content h2 {
     margin-bottom: 20px;
     color: #333333;
 }
 
-.contact-item {
+.contact__section--item {
     display: flex;
     flex-direction: column;
     align-items: right;
@@ -35,41 +36,40 @@
     color: #333333;
 }
 
-.contact-item i {
+.contact__section--item i {
     margin-right: 10px;
     color: #ff6600;
 }
 
-.conctat-item_flex{
+.contact__section--itemFlex{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5em;
     margin: 0 auto;
 }
 
-.conctat-item_flex svg{
+.contact__section--itemFlex svg{
     width: 20px;
     height: 20px;
 }
-  
 
-.contact-item span {
+.contact__section--itemFlex-span{
+    color: var(--gris-clarito)
+}
+
+.contact__section--itemFlex-span {
     display: inline-block;
     min-width: 200px;
     text-align: left;
 }
 
-.map {
-    max-width: 600px;
+.contact__section--map {
+    max-width: 400px;
+    
 }
 
-@media (min-width: 768px) {
-    .contact-container {
-        flex-direction: row;
-    }
-
-    .contact-content, .map {
-        flex: 1;
-        margin: 10px;
-    }
+.contact__section--map-iframe{
+    width: 100%;
 }
+

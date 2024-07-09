@@ -22,26 +22,26 @@ main{
     font-size: 2em;
 }
 
-.hero_title img{
+.hero__title img{
     width: 20px;
     height: 20px;
     margin-top: 4rem;
 }
 
-.hero_paragraph{
+.hero__paragraph{
    color:var(--gris-clarito);
    margin-top: 2rem;
    width: 76%;
    font-size: 1em;
 }  
 
-.hero_buttons{
+.hero__buttons{
     display: flex;
     align-items: baseline;
     gap:2rem;
 }
 
-.hero_button-curriculum{       
+.hero__buttons--curriculum{       
     padding: .3rem 1.5rem;
     margin-top: 2rem;
     border-radius: 1rem;
@@ -51,12 +51,12 @@ main{
     cursor: pointer;
 }
    
-.hero_button-curriculum img{
+.hero__buttons--curriculum img{
     width: 14px;
     height: 14px;  
 }
 
-.hero_button-proyectos{
+.hero__buttons--proyectos{
     color: var(--negro);
     font-weight: 700;
     border-radius: 1rem;
@@ -66,56 +66,50 @@ main{
     cursor: pointer;
 }
 
-.hero_button-proyectos a{
+.hero__buttons--proyectos a{
     text-decoration: none;
     color: var(--negro);
 }
 
-.hero_button-proyectos img{
+.hero__buttons--proyectos img{
     width: 14px;
     height: 7px;  
 }
 
-.hero_imgFoto{
+.hero__imgFoto{
     width: 300px;
     height: 260px;
     margin-top: 1rem;
     text-align: center;
     /* mix-blend-mode: multiply; */
 }
-
+/* ------------------------------------------------------------------------------------------------------------------------- */
 /* About */
-.about{
+.about__section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0rem;
     width: 100%;
     height: 600px;
 }
 
-.about_title img{
+.about__section--title img{
     width: 5px;
 }
 
-.about_paragraph{
-    width: 975px;
+.about__section--paragraph{
+    max-width: 1200px;
+    width: 100%;
+    padding: 4rem;
     text-align: left;
     margin-top: 1rem;
     color: var(--gris-clarito);
 }
 
-/* .about_background{ */
-    /* Gradients */
-   /*  background: #abbaab; */  /* fallback for old browsers */
-   /*  background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab); */  /* Chrome 10-25, Safari 5.1-6 */
-   /*  background: linear-gradient(to bottom, #ffffff, #abbaab);  *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*  animation: bounce 1s ease-out 1;
-    animation: show 1s ease-out 1; */
-
-/* } */
-
+ 
+ 
 
 
 
