@@ -1,0 +1,190 @@
+@import url("./hero.css");
+@import url("./navbar.css");
+@import url("./card.css");
+@import url("./footer.css");
+@import url("./contact.css");
+
+:root{
+    /* Font*/
+    --alternative-font: "Raleway", sans-serif;
+    
+    /* Background-Color Navbar*/
+    --negro: RGB(17, 17, 16); 
+    /* Font-Color Navbar */
+    --light-font-solid: #FFFFFF;
+    
+    /* Font-Color Hero */
+    --gris-clarito:  #95A5A6 ;
+    --azuloscuro: #34495E;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor */
+.container {
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Animaciones */
+/* Rebote */
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+      transform: translate3d(0, -30px, 0) scaleY(1.1);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+      transform: translate3d(0, -15px, 0) scaleY(1.05);
+    }
+  
+    80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+      transform: translate3d(0, 0, 0) scaleY(0.95);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+      transform: translate3d(0, -4px, 0) scaleY(1.02);
+    }
+  }
+  .animate__bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+/*   @keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale:100%;
+    }
+
+    img {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: show;
+        animation-fill-mode: both;
+    }
+  } */
+
+
+  /* Media Query */
+
+/* Dispositivos móviles pequeños (hasta 480px) y Dispositivos móviles medianos (481px a 767px) */
+@media (max-width: 480px){
+  .navbar {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      gap:3.5em;
+      max-width: 480px;
+      max-height: 600px;
+      font-size: 0.8em;
+  }
+
+  .navbar__logo img{
+    width: 80px;
+  }
+
+  .navbar_menu, .navbar__item {
+    padding-left: 2rem;
+    gap:0em;
+  }
+
+  main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .hero {
+    margin-left: 2rem;
+  }
+  
+  .hero_imgFoto{
+    width: 64px;
+    height: 64px;
+    display: none;
+  }
+
+  .hero_paragraph{
+    max-width: 300px;
+  }
+
+  /* About */
+  .about_paragraph{
+    max-width: 480px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  /* Card */
+  .card-container{
+    max-height: 1000px;
+  } 
+
+  .card{
+    height: 280px;
+    border-radius: 2rem;
+  }
+}
+
+ 
+
+/* Tablets en orientación vertical (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+      font-size: 1.8em; /* Ajustar el tamaño de fuente para tablets verticales */
+  }
+
+  main {
+      padding: 20px; /* Ajustar el relleno */
+  }
+}
+
+/* Tablets en orientación horizontal y pantallas pequeñas de escritorio (1025px a 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  header {
+      font-size: 2em; /* Ajustar el tamaño de fuente para tablets horizontales y pantallas pequeñas */
+  }
+
+  main {
+      padding: 25px; /* Ajustar el relleno */
+  }
+}
+  

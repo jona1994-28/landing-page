@@ -1,0 +1,35 @@
+/* Navbar */
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0; /* Ajusta según sea necesario */
+    height: 140px; /* Altura  */
+    width: 100%; /* Ancho completo */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+    background-color: var(--negro);
+    color: var(--light-font-solid);
+    font-family: var(--alternative-font);
+}
+
+.navbar__logo img{
+    margin-top: 0.5rem;
+    width: 100px; 
+    height: auto; 
+    border-radius: 0.5rem;
+}
+
+.navbar_menu, .navbar__item{
+    display: flex;
+    text-decoration: none;
+    gap: 3rem;
+}
+
+
+

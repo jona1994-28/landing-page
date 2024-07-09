@@ -4,53 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E2 - Challenge Landing Page - Navbar | Diseño Web</title>
-    <link rel="stylesheet" href="./css-navbar/style.css">
-    <link rel="stylesheet" href="./css-hero/style.css">
-    <link rel="stylesheet" href="./css-index/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-     <header>
-        <nav class="navbar container">
-            <picture class="navbar__logo"><img src="./assets/imgNavbar/logo-navbar2.png" alt=""></picture>
-            <ul class="navbar_menu">
-                <li class="navbar__item">Home</li>
-                <li class="navbar__item">About</li>
-                <li class="navbar__item">Projects</li>
-                <li class="navbar__item">Contact</li>
+    <!-- Header -->
+    <header class="header">
+        <img src="./assets/imgNavbar/webDeveloper-sinfondo.png" alt="">
+        <nav class="header__navbar">
+            <label for="header__navbar--toggleMenu"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="header__navbar--toggleMenu">
+            <ul class="header__navbarMenu">
+                <li class="header__navbar-menu--item">Home</li>
+                <li class="header__navbar-menu--item">About</li>
+                <li class="header__navbar-menu--item">Projects</li>
+                <li class="header__navbar-menu--item">Contact</li>
             </ul>
         </nav>
-     </header>
-
-     <!-- Banner -->
-    <div class="hero_fondo"> 
-        <main>
-            <section class="hero">
-                <h1 class="hero_title">Hola, soy Jonathan <img src="./assets/imgHero/feliz.png" alt=""></h1>
-                <h1 class="hero_subtitle">Desarrollador Full Stack.</h1>
-                <p class="hero_paragraph">Bienvenidxs a mi Portfolio. Si quieres ponerte en contacto conmigo escríbeme a jonathan@tudominio.com.</p>
-                <div class="hero_buttons">
-                    <button class="hero_button-curriculum">
-                        Currículum <img src="./assets/imgHero/cv.png" alt="">
-                    </button>
-                    <button class="hero_button-proyectos">
-                        Proyectos
-                    </button>
-                </div>
-            </section>
-            <section class="hero">
-                <img class="hero_imgFoto" src="./assets/imgHero/foto.png" alt="">
-            </section>
-        </main>
-    </div> 
+    </header>
+    
+    <!-- Banner -->
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">Hola, soy Jonathan <img src="./assets/imgHero/feliz.png" alt=""></h1>
+            <h1 class="hero__subtitle">Desarrollador Full Stack.</h1>
+            <p class="hero__paragraph">Bienvenidxs a mi Portfolio. Si quieres ponerte en contacto conmigo escríbeme a jonathan@tudominio.com.</p>
+            <div class="hero__buttons">
+                <button class="hero__buttons--curriculum">
+                    Currículum <img src="./assets/imgHero/cv.png" alt="">
+                </button>
+                <button class="hero__buttons--proyectos">
+                    <a href="#hola">Proyectos</a>
+                </button>
+            </div>
+        </section>
+        <section class="hero">
+            <img class="hero__imgFoto" src="./assets/imgHero/foto.png" alt="">
+        </section>
+    </main> 
     <!-- Fin Banner -->
 
     <!-- About -->
-    <div class="about_background">
-        <section class="about">
-            <h1 class="about_title">About<img src="./assets/imgHero/punto-final.png" alt=""></h1>
-            <p class="about_paragraph">Soy un desarrollador full stack apasionado en la creación de aplicaciones web y móviles robustas y escalables. Mi objetivo es transformar ideas innovadoras en productos digitales eficientes y accesibles. Tengo un enfoque integral en el desarrollo, abarcando tanto el frontend como el backend, lo que me permite gestionar y optimizar todo el ciclo de vida del desarrollo de software.</p>
-        </section>
+    <div class="about">
+      <section class="about__section">
+            <h1 class="about__section--title">About<img src="./assets/imgHero/punto-final.png" alt=""></h1>
+            <p class="about__section--paragraph">Soy un desarrollador full stack apasionado en la creación de aplicaciones web y móviles robustas y escalables. Mi objetivo es transformar ideas innovadoras en productos digitales eficientes y accesibles. Tengo un enfoque integral en el desarrollo, abarcando tanto el frontend como el backend, lo que me permite gestionar y optimizar todo el ciclo de vida del desarrollo de software.</p>
+      </section>
     </div> 
     <!-- Fin About -->
+
+    <!-- Cards -->
+    <div class="card__description container" id="hola">
+        <h1 id="card__description--paragraph">Proyectos</h1>
+        <p id="card__description--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure labore nesciunt nam odit deserunt numquam repudiandae.</p>
+    </div>
+   
+    <div class="card__container container">
+        <div class="card">
+            <picture><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z"/></svg></picture>
+            <h2>Proyecto FullStack</h2>
+            <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+       <div class="card">
+          <picture><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"/></svg></picture>
+          <h2>Proyecto FrontEnd</h2>
+          <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="card">
+            <picture><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M19.79 15.41c.95-2.17.95-4.66 0-6.82l-2.74 1.24c.6 1.38.6 2.95.01 4.34zm-4.37-11.2a8.54 8.54 0 0 0-6.83 0l1.24 2.73c1.39-.59 2.96-.59 4.35.01zM4.21 8.58a8.56 8.56 0 0 0 0 6.84l2.74-1.25c-.6-1.38-.6-2.96 0-4.35zm4.38 11.21a8.5 8.5 0 0 0 6.83-.01l-1.24-2.73a5.5 5.5 0 0 1-4.34.01zM12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2m0 6a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4"/></svg></picture> 
+            <h2>Proyecto BackEnd</h2>
+            <p class="card__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>   
+        </div>  
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact__section">
+        <div class="contact__section--content">
+            <h2>Contact Us</h2>
+            <div class="contact__section--item">
+                <div class="contact__section--itemFlex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32"><path fill="currentColor" d="m16 24l-6.09-8.6A8.14 8.14 0 0 1 16 2a8.08 8.08 0 0 1 8 8.13a8.2 8.2 0 0 1-1.8 5.13Zm0-20a6.07 6.07 0 0 0-6 6.13a6.2 6.2 0 0 0 1.49 4L16 20.52L20.63 14A6.24 6.24 0 0 0 22 10.13A6.07 6.07 0 0 0 16 4"/><circle cx="16" cy="9" r="2" fill="currentColor"/><path fill="currentColor" d="M28 12h-2v2h2v14H4V14h2v-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V14a2 2 0 0 0-2-2"/></svg>
+                    <span class="ontact__section--itemFlex-span">123 Calle Falsa, Ciudad, País</span>
+                </div>
+            </div>
+            <div class="contact__section--item">
+                <div class="contact__section--itemFlex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg>
+                    <span class="contact-item_flex-span">email@example.com</span>
+                </div>
+            </div>
+            <div class="contact__section--item">
+                <div class="contact__section--itemFlex"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+                    <span class="contact__section--itemFlex-span">+1 234 567 890</span>
+                </div>
+            </div>
+        </div>
+        <div class="contact__section--map">
+            <iframe 
+                class="contact__section--map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086676454888!2d-122.41941548468128!3d37.774929779759585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f7a2b473%3A0x8adfe8ec85c4e81b!2s123%20Calle%20Falsa%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1ses!2s!4v1626372220181!5m2!1ses!2s"  
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer__container container">
+        <picture class="footer__container--logo"><img src="./assets/imgNavbar/logo-navbar2.png" alt=""></picture>
+        <p>&copy; Creado por Jonathan</p>
+    </div>
+    
 </body>
 </html>
